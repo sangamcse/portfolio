@@ -1,10 +1,13 @@
 import Layout from '../components/layout';
+import CustomHead from '../components/head';
 import { useTheme } from '../utils/theme_context';
 
 export default function Index() {
   const { toggleTheme } = useTheme();
+
   return (
     <Layout>
+      <CustomHead />
       <div className="absolute w-screen h-screen bg-background p-12 flex flex-col align-center">
         <h1 className="text-center text-heading text-4xl font-bold">
           NextJS + Tailwind Theming example
