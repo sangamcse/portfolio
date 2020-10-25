@@ -1,65 +1,48 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Layout from '../components/layout';
+import { useTheme } from '../utils/theme_context';
 
-export default function Home() {
+export default function Index() {
+  const { toggleTheme } = useTheme();
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+    <Layout>
+      <div className="absolute w-screen h-screen bg-background p-12 flex flex-col align-center">
+        <h1 className="text-center text-heading text-4xl font-bold">
+          NextJS + Tailwind Theming example
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p className="text-center mt-8 text-xl text-body">
+          This is a basic example of how to setup theming using Tailwind +
+          PostCSS. checkout the{' '}
+          <a
+            className="text-primary hover:text-primary-hover"
+            href="https://github.com/sangamcse"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            repo
+          </a>{' '}
+          for more information!
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
+        <p className="text-center mt-8 text-xl text-body">
+          Made with ❤ by{' '}
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+            className="text-primary hover:text-primary-hover"
+            href="https://www.sangam.dev"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            Sangam Kumar
           </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+        </p>
+        <div className="text-center">
+          <button
+            className="m-8 p-4 border rounded-lg bg-primary hover:bg-primary-hover text-white transition duration-200"
+            onClick={toggleTheme}
+            type="button"
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            Toggle theme
+          </button>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+      </div>
+    </Layout>
+  );
 }
