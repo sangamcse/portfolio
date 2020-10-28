@@ -8,6 +8,7 @@ function CustomHead(props) {
     <Head>
       <title>{`${pageName} | Sangam Kumar`}</title>
       <meta name="description" content="Software Development Engineer" />
+      <meta charset="UTF-8" />
       <link rel="icon" href="/favicon.ico" />
       {children}
       <link
