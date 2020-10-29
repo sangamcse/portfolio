@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "(eslint --ext=js --ext=jsx --fix src ) && echo Lint Passed! ALL Clear! ❤",
+    "precommit": "yarn lint"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
