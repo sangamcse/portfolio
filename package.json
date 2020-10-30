@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "(eslint --ext=js --ext=jsx --fix src ) && echo Lint Passed! ALL Clear! ❤",
+    "lint": "eslint --ext=js --ext=jsx --fix components pages utils",
     "precommit": "yarn lint"
   },
   "dependencies": {
