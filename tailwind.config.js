@@ -25,9 +25,20 @@ module.exports = {
         'heading-muted': 'var(--color-heading-muted)',
         body: 'var(--color-body)',
         'body-muted': 'var(--color-body-muted)'
+      },
+      width: {
+        'max-content': 'max-content'
       }
+    },
+    minWidth: {
+      '1/3': '33%'
     }
   },
-  variants: {},
+  variants: {
+    textColor: ['responsive', 'hover', 'focus', 'visited', 'group-hover'],
+    textDecoration: ['hover', 'focus', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+    borderWidth: ['responsive', 'hover', 'focus']
+  },
   plugins: []
 };

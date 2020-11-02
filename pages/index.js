@@ -1,14 +1,15 @@
 import Layout from '../components/layout';
-import CustomHead from '../components/head';
+import MyHead from '../components/head';
+
 import { useTheme } from '../utils/theme_context';
 
-export default function Index() {
+function Index() {
   const { toggleTheme } = useTheme();
 
   return (
     <Layout>
-      <CustomHead />
-      <div className="absolute w-screen h-screen bg-background p-12 flex flex-col align-center">
+      <MyHead />
+      <div className="w-screen p-12 flex flex-col align-center">
         <h1 className="text-center text-heading text-4xl font-bold">
           NextJS + Tailwind Theming example
         </h1>
@@ -25,17 +26,6 @@ export default function Index() {
           </a>{' '}
           for more information!
         </p>
-        <p className="text-center mt-8 text-xl text-body">
-          Made with ❤ by{' '}
-          <a
-            className="text-primary hover:text-primary-hover"
-            href="https://www.sangam.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Sangam Kumar
-          </a>
-        </p>
         <div className="text-center">
           <button
             className="m-8 p-4 border rounded-lg bg-primary hover:bg-primary-hover text-white transition duration-200"
@@ -49,3 +39,5 @@ export default function Index() {
     </Layout>
   );
 }
+
+export default Index;

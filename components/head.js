@@ -1,14 +1,14 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 
-function CustomHead(props) {
+function MyHead(props) {
   const { pageName, children } = props;
 
   return (
     <Head>
       <title>{`${pageName} | Sangam Kumar`}</title>
       <meta name="description" content="Software Development Engineer" />
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <link rel="icon" href="/favicon.ico" />
       {children}
       <link
@@ -22,14 +22,14 @@ function CustomHead(props) {
   );
 }
 
-CustomHead.propTypes = {
+MyHead.propTypes = {
   pageName: PropTypes.string,
   children: PropTypes.element
 };
 
-CustomHead.defaultProps = {
+MyHead.defaultProps = {
   pageName: 'Home',
   children: null
 };
 
-export default CustomHead;
+export default MyHead;
