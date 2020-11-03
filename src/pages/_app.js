@@ -1,6 +1,6 @@
-import ThemeProvider from '../utils/theme_context';
+import ThemeProvider from 'utils/theme_context';
 
-import '../styles/index.css';
+import '../styles/index.scss';
 
 function App({ Component, pageProps }) {
   return (

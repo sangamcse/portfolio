@@ -1,7 +1,7 @@
-import Layout from '../components/layout';
-import MyHead from '../components/head';
+import Layout from 'components/Layout';
+import MyHead from 'components/SiteHead';
 
-import { useTheme } from '../utils/theme_context';
+import { useTheme } from 'utils/theme_context';
 
 function Index() {
   const { toggleTheme } = useTheme();
@@ -9,7 +9,7 @@ function Index() {
   return (
     <Layout>
       <MyHead />
-      <div className="w-screen p-12 flex flex-col align-center">
+      <div className="w-screen p-12 flex flex-col">
         <h1 className="text-center text-heading text-4xl font-bold">
           NextJS + Tailwind Theming example
         </h1>
