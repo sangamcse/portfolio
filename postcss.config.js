@@ -3,10 +3,7 @@ const path = require('path');
 const purgecssConfig = [
   '@fullhuman/postcss-purgecss',
   {
-    content: [
-      path.join(__dirname, 'pages', '**', '*.{js,jsx,ts,tsx}'),
-      path.join(__dirname, 'components', '**', '*.{js,jsx,ts,tsx}')
-    ],
+    content: [path.join(__dirname, 'src', '**', '*.{js,jsx}')],
     defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
   }
 ];
