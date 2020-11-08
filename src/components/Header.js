@@ -1,3 +1,5 @@
+import 'styles/Header.module.scss';
+
 function Header() {
   return (
     <header className="header">

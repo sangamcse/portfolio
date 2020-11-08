@@ -1,5 +1,10 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   theme: {
+    fontFamily: {
+      mono: ['DM Mono', fontFamily.mono]
+    },
     extend: {
       colors: {
         muted: 'var(--color-muted)',

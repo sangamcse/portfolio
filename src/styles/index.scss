@@ -1,15 +1,11 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
 /* purgecss end ignore */
 @tailwind utilities;
 
 /* purgecss start ignore */
-html,
-body {
-  @apply bg-background;
-}
-
 .theme-light {
   --color-primary: theme('colors.blue.700');
   --color-primary-hover: theme('colors.blue.800');
@@ -82,6 +78,11 @@ body {
   --color-background-muted: theme('colors.gray.800');
 }
 
+html,
+body {
+  @apply bg-background;
+}
+
 .content-transition {
   transition: background-color 0.25s;
 }
@@ -90,11 +91,4 @@ body {
   color: var(--color-info-hover);
 }
 
-.header {
-  @apply relative flex justify-center p-4 col-span-12;
-
-  /* &-inner {
-
-  } */
-}
 /* purgecss end ignore */
