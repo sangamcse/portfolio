@@ -78,9 +78,30 @@
   --color-background-muted: theme('colors.gray.800');
 }
 
-html,
+html {
+  box-sizing: border-box;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply bg-background;
+  margin: 0;
+  padding: 0;
+  font-family: DM Mono, -apple-system, BlinkMacSystemFont, roboto, segoe ui, Helvetica, Arial, sans-serif;
+  font-display: auto;
+  font-size: 1rem;
+  line-height: 1.54;
+  background-color: #fff;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .content-transition {
@@ -89,6 +110,40 @@ body {
 
 ::selection {
   color: var(--color-info-hover);
+}
+
+.header {
+  @apply relative flex justify-center p-4 col-span-12;
+}
+
+.logo__cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1rem;
+  background: green;
+  margin-left: 5px;
+  border-radius: 1px;
+  animation: cursor 1s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo__cursor {
+    animation: none;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 /* purgecss end ignore */

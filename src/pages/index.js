@@ -1,11 +1,7 @@
 import Layout from 'components/Layout';
 import MyHead from 'components/SiteHead';
 
-import { useTheme } from 'utils/theme_context';
-
 function Index() {
-  const { toggleTheme } = useTheme();
-
   return (
     <Layout>
       <MyHead />
@@ -26,15 +22,6 @@ function Index() {
           </a>{' '}
           for more information!
         </p>
-        <div className="text-center">
-          <button
-            className="m-8 p-4 border rounded-lg bg-primary hover:bg-primary-hover text-white transition duration-200"
-            onClick={toggleTheme}
-            type="button"
-          >
-            Toggle theme
-          </button>
-        </div>
       </div>
     </Layout>
   );
