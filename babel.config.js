@@ -9,9 +9,9 @@ module.exports = {
           components: './src/components',
           utils: './src/utils',
           posts: './src/posts',
-          styles: './src/styles'
-        }
-      }
-    ]
-  ]
+          styles: './src/styles',
+        },
+      },
+    ],
+  ],
 };

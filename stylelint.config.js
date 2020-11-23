@@ -4,11 +4,11 @@ module.exports = {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['extends', 'tailwind']
-      }
+        ignoreAtRules: ['extends', 'tailwind'],
+      },
     ],
     'block-no-empty': null,
     'custom-property-empty-line-before': null,
-    'unit-allowed-list': ['em', 'rem', 's', 'px', '%', 'vh']
-  }
+    'unit-allowed-list': ['em', 'rem', 's', 'px', '%', 'vh'],
+  },
 };

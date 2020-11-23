@@ -17,7 +17,7 @@ function Header() {
             style={{
               borderRight: '1px solid',
               marginRight: '18px',
-              zIndex: 9999
+              zIndex: 9999,
             }}
           >
             <ul className="flex items-center justify-start max-w-full mx-auto my-0 py-0 px-5 text-base list-none">

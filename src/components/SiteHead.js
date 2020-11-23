@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 
 function MyHead(props) {
   const { pageName, children } = props;
@@ -22,14 +21,9 @@ function MyHead(props) {
   );
 }
 
-MyHead.propTypes = {
-  pageName: PropTypes.string,
-  children: PropTypes.element
-};
-
 MyHead.defaultProps = {
   pageName: 'Home',
-  children: null
+  children: null,
 };
 
 export default MyHead;

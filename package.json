@@ -1,19 +1,22 @@
 {
-  "name": "portfolio",
+  "name": "sangam.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3535",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext=js --fix src && stylelint src/styles/*.scss",
-    "precommit": "yarn lint"
+    "lint": "eslint --ext js --fix src && stylelint src/styles/*.scss"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=12"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "3.0.0",
+    "autoprefixer": "^10.0.2",
     "next": "10.0.0",
+    "next-svgr": "0.0.2",
     "postcss-preset-env": "6.7.0",
-    "prop-types": "15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "1.29.0",
@@ -34,8 +37,15 @@
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-react": "7.14.2",
     "eslint-plugin-react-hooks": "1.4.0",
+    "husky": "4.3.0",
     "prettier": "1.16.4",
+    "pretty-quick": "3.1.0",
     "stylelint": "13.7.2",
     "stylelint-config-standard": "20.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && pretty-quick --staged"
+    }
   }
 }
