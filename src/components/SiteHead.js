@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-function MyHead(props) {
+export default function MyHead(props) {
   const { pageName, children } = props;
 
   return (
@@ -25,5 +25,3 @@ MyHead.defaultProps = {
   pageName: 'Home',
   children: null,
 };
-
-export default MyHead;

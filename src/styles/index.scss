@@ -72,31 +72,18 @@
   --color-background-muted: theme('colors.gray.800');
 }
 
+body,
 html {
-  box-sizing: border-box;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  scroll-behavior: smooth;
+  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  color: #222;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: DM Mono, -apple-system, BlinkMacSystemFont, roboto, segoe ui,
     Helvetica, Arial, sans-serif;
-  font-display: auto;
-  font-size: 1rem;
-  line-height: 1.54;
-  background-color: #fff;
-  color: #222;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-feature-settings: 'liga', 'tnum', 'case', 'calt', 'zero', 'ss01', 'locl';
-  -webkit-overflow-scrolling: touch;
-  -webkit-text-size-adjust: 100%;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  margin: 0;
 }
 
 .content-transition {
@@ -107,18 +94,36 @@ body {
   color: var(--color-info-hover);
 }
 
-.header {
-  @apply relative flex justify-center p-4 col-span-12;
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.logo__cursor {
-  display: inline-block;
-  width: 10px;
-  height: 1rem;
-  background: green;
-  margin-left: 5px;
-  border-radius: 1px;
-  animation: cursor 1.25s infinite;
+.header {
+  @apply relative flex justify-center p-4 col-span-12 h-16 bg-background-muted;
+
+  &__inner {
+    @apply flex items-center justify-between my-0 mx-auto w-6/12 text-center text-xl text-body;
+  }
+
+  &__right {
+    @apply flex flex-row items-center;
+  }
+}
+
+.logo {
+  @apply flex items-center no-underline font-semibold font-mono;
+
+  &__cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1rem;
+    background: green;
+    margin-left: 5px;
+    border-radius: 1px;
+    animation: cursor 1.25s infinite;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -139,4 +144,36 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+.menu {
+  border-right: 1px solid;
+  margin-right: 18px;
+  z-index: 9999;
+
+  &__inner {
+    @apply flex items-center justify-start max-w-full mx-auto my-0 py-0 px-5 text-base list-none;
+
+    li {
+      @apply my-0 mx-4;
+    }
+  }
+}
+
+.theme-toggle {
+  @apply flex items-center justify-center leading-none cursor-pointer select-none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.footer {
+  @apply flex justify-center px-4 py-3;
 }

@@ -1,36 +1,30 @@
 import { useTheme } from 'utils/theme_context';
 
-function Header() {
+export default function Header() {
   const { toggleTheme } = useTheme();
 
   return (
-    <header className="header h-16 bg-background-muted">
-      <span className="flex items-center justify-between my-0 mx-auto max-w-full w-11/12 text-center text-xl text-body">
+    <header className="header">
+      <span className="header__inner">
         <a className="hover:text-primary-hover" href="/">
-          <div className="flex items-center no-underline font-semibold font-mono">
+          <div className="logo">
             <span className="text-lg">sangamcse</span>
             <span className="logo__cursor" />
           </div>
         </a>
-        <span className="flex flex-row items-center">
-          <nav
-            style={{
-              borderRight: '1px solid',
-              marginRight: '18px',
-              zIndex: 9999,
-            }}
-          >
-            <ul className="flex items-center justify-start max-w-full mx-auto my-0 py-0 px-5 text-base list-none">
-              <li className="my-0 mx-4">
+        <span className="header__right">
+          <nav className="menu">
+            <ul className="menu__inner">
+              <li>
                 <a href="/about">About</a>
               </li>
-              <li className="my-0 mx-4">
+              <li>
                 <a href="/posts">Blog</a>
               </li>
             </ul>
           </nav>
           <span
-            className="flex items-center justify-center leading-none cursor-pointer select-none"
+            className="theme-toggle"
             onClick={toggleTheme}
             aria-hidden="true"
           >
@@ -54,5 +48,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
