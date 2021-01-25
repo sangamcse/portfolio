@@ -6,7 +6,7 @@
     "dev": "next dev -p 3535",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --ext js --fix src && stylelint --config stylelint.config.js --fix src/styles/*.scss"
+    "lint": "eslint --fix --ext js src && stylelint --fix --config stylelint.config.js src/styles/*.scss"
   },
   "engineStrict": true,
   "engines": {
