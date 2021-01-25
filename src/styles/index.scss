@@ -108,10 +108,10 @@ body {
 }
 
 .header {
-  @apply relative flex justify-center p-4 col-span-12 h-16 bg-background-muted;
+  @apply relative flex justify-center p-4 h-16 bg-background-muted;
 
   &__inner {
-    @apply flex items-center justify-between my-0 mx-auto w-6/12 text-center text-xl text-body;
+    @apply flex items-center justify-between my-0 mx-auto w-screen text-center text-xl text-body;
   }
 
   &__right {
@@ -183,4 +183,12 @@ body {
 
 .footer {
   @apply flex justify-center px-4 py-3;
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__inner {
+      @apply w-8/12;
+    }
+  }
 }
