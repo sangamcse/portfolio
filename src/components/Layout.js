@@ -1,6 +1,6 @@
 import { useTheme } from 'utils/theme_context';
 
-import Header from 'components/Header';
+import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
 
 export default function Layout({ children }) {

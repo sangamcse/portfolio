@@ -1,6 +1,6 @@
 import { useTheme } from 'utils/theme_context';
 
-export default function Header() {
+export const Header = () => {
   const { toggleTheme } = useTheme();
 
   return (
@@ -47,4 +47,4 @@ export default function Header() {
       </span>
     </header>
   );
-}
+};
