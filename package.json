@@ -8,12 +8,9 @@
     "start": "next start",
     "lint": "eslint --fix --ext js src && stylelint --fix --config stylelint.config.js src/styles/*.scss"
   },
-  "engineStrict": true,
-  "engines": {
-    "node": ">=12"
-  },
   "dependencies": {
     "@mapbox/rehype-prism": "0.5.0",
+    "@vercel/node": "1.9.0",
     "autoprefixer": "10.0.2",
     "classnames": "2.2.6",
     "glob": "7.1.6",
@@ -22,7 +19,7 @@
     "luxon": "1.26.0",
     "next": "10.0.0",
     "next-compose-plugins": "2.2.1",
-    "next-mdx-remote": "2.1.3",
+    "next-mdx-remote": "^1.0.1",
     "next-seo": "4.17.0",
     "next-svgr": "0.0.2",
     "postcss": "8.2.4",
@@ -53,7 +50,8 @@
     "prettier": "1.16.4",
     "pretty-quick": "2.0.2",
     "stylelint": "13.7.2",
-    "stylelint-config-standard": "20.0.0"
+    "stylelint-config-standard": "20.0.0",
+    "vercel": "21.2.3"
   },
   "husky": {
     "hooks": {
