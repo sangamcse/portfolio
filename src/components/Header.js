@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { useTheme } from 'utils/theme_context';
 
 export const Header = () => {
@@ -6,20 +8,26 @@ export const Header = () => {
   return (
     <header className="header">
       <span className="header__inner">
-        <a className="hover:text-primary-hover" href="/">
-          <div className="logo">
-            <span className="text-lg">sangamcse</span>
-            <span className="logo__cursor" />
-          </div>
-        </a>
+        <Link href="/">
+          <a className="hover:text-primary-hover">
+            <div className="logo">
+              <span className="text-lg">sangamcse</span>
+              <span className="logo__cursor" />
+            </div>
+          </a>
+        </Link>
         <span className="header__right">
           <nav className="menu">
             <ul className="menu__inner">
               <li>
-                <a href="/about">About</a>
+                <Link href="/about">
+                  <a>About</a>
+                </Link>
               </li>
               <li>
-                <a href="/blog">Blog</a>
+                <Link href="/blog">
+                  <a>Blog</a>
+                </Link>
               </li>
             </ul>
           </nav>

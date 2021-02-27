@@ -1,4 +1,4 @@
-import renderToString from 'next-mdx-remote/render-to-string';
+// import renderToString from 'next-mdx-remote/render-to-string';
 import matter from 'gray-matter';
 import { glob } from 'glob';
 
@@ -30,15 +30,15 @@ export const getStaticProps = async ({ params: { slug } }) => {
     ...data,
     publishedAt: data.publishedAt.toISOString(),
   };
-  const mdxSource = await renderToString(content, {
-    scope: frontMatter,
-    components: blogComponents,
-    mdxOptions,
-  });
+  // const mdxSource = await renderToString(content, {
+  //   scope: frontMatter,
+  //   components: blogComponents,
+  //   mdxOptions,
+  // });
 
   return {
     props: {
-      source: mdxSource,
+      // source: mdxSource,
       frontMatter,
     },
   };
