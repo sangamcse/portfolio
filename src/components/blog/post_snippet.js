@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { formatMdxPath } from 'utils/formatMdxPath';
+import { formatMdxPath } from 'utils/format_mdx_path';
 import { isoStringToRelativeTime } from 'utils/relative_time';
 
 import { FeaturedImage } from 'components/blog/featured_image';
@@ -10,6 +10,7 @@ export const PostSnippet = ({
   snippet,
   tags,
   publishedAt,
+  img,
   __resourcePath,
 }) => (
   <li
@@ -19,7 +20,7 @@ export const PostSnippet = ({
     <article>
       <Link href={formatMdxPath(__resourcePath)}>
         <a className="sm:grid sm:grid-cols-3 sm:gap-8">
-          <FeaturedImage title={title} className="sm:m-auto" />
+          <FeaturedImage title={title} className="sm:m-auto" image={img} />
           <div className="p-4 sm:p-0 sm:col-span-2">
             <h2 className="text-2xl leading-normal underline mb-2">{title}</h2>
             <p className="mb-4">{snippet}</p>

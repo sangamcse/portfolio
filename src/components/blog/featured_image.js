@@ -6,8 +6,14 @@ import { getImageSrc } from 'components/blog/get_image_src';
 import { getSeoProps } from 'components/next_seo_config';
 import { AppearingImage } from 'components/appearing_image/appearing_image';
 
-export const FeaturedImage = ({ title, description, withSeo, className }) => {
-  const imageSrc = getImageSrc(title);
+export const FeaturedImage = ({
+  title,
+  image,
+  description,
+  withSeo,
+  className,
+}) => {
+  const imageSrc = getImageSrc(image);
 
   return imageSrc ? (
     <>

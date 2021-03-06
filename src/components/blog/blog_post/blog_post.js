@@ -6,7 +6,10 @@ import { blogComponents } from 'utils/mdx';
 
 const BelowTheFold = dynamic(() => import('./below_the_fold'));
 
-export const BlogPost = ({ frontMatter: { title, snippet, tags }, source }) => {
+export const BlogPost = ({
+  frontMatter: { title, snippet, tags, img },
+  source,
+}) => {
   const mdx = hydrate(source, { components: blogComponents });
 
   return (
@@ -17,7 +20,12 @@ export const BlogPost = ({ frontMatter: { title, snippet, tags }, source }) => {
             <h1>{title}</h1>
             <p className="text-xl lg:text-2xl">{snippet}</p>
           </div>
-          <FeaturedImage title={title} description={snippet} withSeo />
+          <FeaturedImage
+            title={title}
+            description={snippet}
+            image={img}
+            withSeo
+          />
           <section className="px-4 mb-4">{mdx}</section>
           <BelowTheFold title={title} tags={tags} />
         </article>

@@ -1,17 +1,15 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
+const typography = require('@tailwindcss/typography');
 
 module.exports = {
-  purge: {
-    mode: 'layers',
-    layers: ['components', 'utilities'],
-    content: ['./src/**/*.js'],
-  },
+  purge: ['./src/**/*.js', './src/styles/*.scss'],
   theme: {
     fontFamily: {
       mono: ['DM Mono', fontFamily.mono],
     },
     extend: {
       colors: {
+        'twitter-blue': '#1da1f2',
         muted: 'var(--color-muted)',
         'muted-hover': 'var(--color-muted-hover)',
         primary: 'var(--color-primary)',
@@ -50,5 +48,9 @@ module.exports = {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
     borderWidth: ['responsive', 'hover', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    typography({
+      modifiers: ['lg', 'xl'],
+    }),
+  ],
 };

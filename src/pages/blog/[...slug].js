@@ -1,9 +1,10 @@
-// import renderToString from 'next-mdx-remote/render-to-string';
+import renderToString from 'next-mdx-remote/render-to-string';
 import matter from 'gray-matter';
 import { glob } from 'glob';
 
 import { BlogPost } from 'components/blog/blog_post/blog_post';
-import { formatMdxPath } from 'utils/formatMdxPath';
+
+import { formatMdxPath } from 'utils/format_mdx_path';
 import { BLOG_PATH_PREFIX, blogComponents, mdxOptions } from 'utils/mdx';
 
 export async function getStaticPaths() {
@@ -30,15 +31,15 @@ export const getStaticProps = async ({ params: { slug } }) => {
     ...data,
     publishedAt: data.publishedAt.toISOString(),
   };
-  // const mdxSource = await renderToString(content, {
-  //   scope: frontMatter,
-  //   components: blogComponents,
-  //   mdxOptions,
-  // });
+  const mdxSource = await renderToString(content, {
+    scope: frontMatter,
+    components: blogComponents,
+    mdxOptions,
+  });
 
   return {
     props: {
-      // source: mdxSource,
+      source: mdxSource,
       frontMatter,
     },
   };
