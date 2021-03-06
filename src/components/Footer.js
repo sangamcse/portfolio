@@ -6,7 +6,7 @@ export const Footer = () => (
       Made with ❤ by{' '}
       <Link href="/">
         <a
-          className="text-primary hover:text-primary-hover"
+          className="text-link hover:text-link-hover"
           rel="noopener noreferrer"
         >
           Sangam Kumar
