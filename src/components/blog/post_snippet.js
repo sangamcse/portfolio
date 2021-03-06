@@ -14,16 +14,16 @@ export const PostSnippet = ({
   __resourcePath,
 }) => (
   <li
-    className="cursor-pointer even:bg-gray-50 sm:p-4 sm:border-l first:rounded-tl last:first:rounded-bl border-purple-200 hover:border-purple-300 transition duration-300"
+    className="cursor-pointer even:bg-background-c sm:p-4 first:rounded-tl last:first:rounded-bl transition duration-300 flex-auto"
     key={__resourcePath}
   >
     <article>
       <Link href={formatMdxPath(__resourcePath)}>
         <a className="sm:grid sm:grid-cols-3 sm:gap-8">
           <FeaturedImage title={title} className="sm:m-auto" image={img} />
-          <div className="p-4 sm:p-0 sm:col-span-2">
+          <div className="p-4 sm:p-0 sm:col-span-2 prose">
             <h2 className="text-2xl leading-normal underline mb-2">{title}</h2>
-            <p className="mb-4">{snippet}</p>
+            <p className="mb-4 text-body">{snippet}</p>
             <div className="flex flex-col sm:flex-row justify-between text-sm text-right">
               <div className="mb-4 sm:mb-0">
                 {tags.map(tag => (
@@ -35,7 +35,9 @@ export const PostSnippet = ({
                   </span>
                 ))}
               </div>
-              <span>{isoStringToRelativeTime(publishedAt)}</span>
+              <span className="text-body">
+                {isoStringToRelativeTime(publishedAt)}
+              </span>
             </div>
           </div>
         </a>

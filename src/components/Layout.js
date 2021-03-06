@@ -8,7 +8,7 @@ export default function Layout({ children }) {
 
   return (
     <div
-      className={`content-transition duration-200 flex-auto flex flex-col min-h-screen justify-center text-center ${theme} bg-background`}
+      className={`content-transition duration-200 flex-auto flex flex-col min-h-screen justify-center ${theme} bg-background`}
     >
       <Header />
       {children}

@@ -2,6 +2,8 @@ import renderToString from 'next-mdx-remote/render-to-string';
 import matter from 'gray-matter';
 import { glob } from 'glob';
 
+import { MyHead } from 'components/SiteHead';
+import Layout from 'components/Layout';
 import { BlogPost } from 'components/blog/blog_post/blog_post';
 
 import { formatMdxPath } from 'utils/format_mdx_path';
@@ -45,4 +47,11 @@ export const getStaticProps = async ({ params: { slug } }) => {
   };
 };
 
-export default BlogPost;
+export default function Post({ frontMatter, source }) {
+  return (
+    <Layout>
+      <MyHead />
+      <BlogPost frontMatter={frontMatter} source={source} />
+    </Layout>
+  );
+}

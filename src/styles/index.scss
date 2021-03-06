@@ -32,8 +32,15 @@
   --color-heading: theme('colors.gray.900');
   --color-heading-muted: theme('colors.gray.600');
 
-  --color-background: theme('colors.gray.100');
-  --color-background-muted: theme('colors.gray.200');
+  --color-link: #7c3aed;
+  --color-link-hover: #a87cf3;
+
+  // Background Colors
+  --color-background: #fff;
+  --color-background-a: #fafafa;
+  --color-background-b: #f5f5f5;
+  --color-background-c: #eaeaea;
+  --color-background-d: #e1e1e1;
 }
 
 .theme-dark {
@@ -68,8 +75,15 @@
   --color-heading: theme('colors.gray.200');
   --color-heading-muted: theme('colors.gray.400');
 
-  --color-background: theme('colors.gray.900');
-  --color-background-muted: theme('colors.gray.800');
+  --color-link: #a87cf3;
+  --color-link-hover: #7c3aed;
+
+  // Background Colors
+  --color-background: #020202;
+  --color-background-a: #060607;
+  --color-background-b: #090a0c;
+  --color-background-c: #0c1011;
+  --color-background-d: #0f1516;
 }
 
 body,
@@ -108,7 +122,7 @@ body {
 }
 
 .header {
-  @apply relative flex justify-center p-4 h-16 bg-background-muted;
+  @apply relative flex justify-center p-4 h-16 bg-background-d;
 
   &__inner {
     @apply flex items-center justify-between my-0 mx-auto w-screen text-center text-xl text-body;

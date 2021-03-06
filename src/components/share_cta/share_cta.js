@@ -10,11 +10,11 @@ export const ShareCTA = ({ className, title, tags }) => {
   return (
     <aside
       className={cn(
-        'text-center bg-white border border-gray-100 p-4 mb-2 rounded shadow-sm bg-opacity-75',
+        'text-center bg-background-d border border-gray-100 p-4 mb-2 rounded shadow-sm bg-opacity-75',
         className
       )}
     >
-      <div className="mb-2">
+      <div className="mb-2 text-body">
         <span role="img" aria-label="">
           💜
         </span>{' '}
