@@ -62,6 +62,7 @@ module.exports = {
               fontWeight: theme('fontWeight.normal'),
               marginTop: '1em',
               marginBottom: '0.5em',
+              color: 'var(--color-secondary)',
             },
             a: {
               color: 'var(--color-link)',

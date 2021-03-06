@@ -1,0 +1,117 @@
+---
+title: KWoC-Kharagpur Winter of Code
+publishedAt: 2018-01-04T12:34:20.000Z
+snippet: End-term report of KWoC 2017.
+img: kwoc_logo.png
+tags:
+  - kwoc
+  - end-term
+---
+
+## End-term Report, KWoC
+
+### [Introduction](#intro)
+
+Kharagpur Winter of Code is a 5-week long online programme for the students
+of various colleges, who are new to open source software development. The
+programme helps students to get involved in open source and prepares them
+for many open source summer programmes like Google Summer of Code.
+
+Hi, Myself [Sangam Kumar](https://www.sangam.dev). My GitHub ID is
+[sangamcse](https://github.com/sangamcse). I came to know about the programme
+in an Open Source Workshop during Abhiyantran, NIT Sikkim 2017. I registered
+for it on 20th Nov 2017 and started choosing a project. My semester exam ended
+on 22nd Nov 2017 so I was free to start coding.
+
+### Choosing a Project
+
+After registration, next step was to find a suitable project from the
+[listed projects](http://kwoc.kossiitkgp.in/projects).
+
+I found [Coala](https://github.com/coala/) very interesting for me. It provides
+a unified interface for linting and fixing code with a single configuration
+file, regardless of the programming languages used. I joined the gitter
+communication channel of coala and read the newcomer guidelines. My mentor for
+this project is [Yash Nisar](https://github.com/yash-nisar). I contacted him
+personally via [Facebook](https://www.facebook.com/yash.nisar/). He guided me
+to take all the steps to start. I started contributing after all the steps
+done.
+
+### Commiting on Github
+
+#### _[My First PR](#firstpr)_
+
+To start contribution on Coala, there were some rules to follow. It was all
+given in the newcomer guidelines. Next step was to find a
+[difficulty/newcomer issue](https://github.com/coala/coala-bears/issues?q=is%3Aopen+is%3Aissue+label%3Adifficulty%2Fnewcomer).
+I chose an [issue](https://github.com/coala/coala-bears/issues/2004) which was
+opened by my mentor. The issue was very easy for me. I solved the issue and
+sent [the PR](https://github.com/coala/coala-bears/pull/2148). But let me tell
+you that getting merged the PR was not so easy.
+
+![First changes for the issue](/images/blog/1.png)
+
+Changes required in the issue was not this much. So
+[Yash Nisar](https://github.com/yash-nisar 'Yash Nisar') told me to make some
+more changes in another file. So my final change looks like this.
+
+![Second changes for the issue](/images/blog/2.png)
+
+And there was some more issue in the PR. There was a failing test case on
+circleCI but it was something related to an inability to fetch some dependency.
+The gitmate-bot was checking the commit and my commit was not proper, so
+[Yash Nisar](https://github.com/yash-nisar 'Yash Nisar') helped me in that.
+
+![Suggestion by mentor](/images/blog/3.png)
+
+I made some changes in my commit which now look like below.
+
+![Changes in commit as suggested](/images/blog/4.png)
+
+And it passed all test cases for my first PR. It was ready to merge but
+maintainer was taking some time to merge it. So the mentor suggested to
+rebase my branch.
+
+![Suggestion by mentor](/images/blog/5.png)
+
+On 24th Dec, finally, my first PR got merged into the master branch of
+coala/coala-bear.
+
+![Merged PR](/images/blog/6.png)
+
+#### _[My Second PR](#secondpr)_
+
+Before choosing my second issue, I reviewed 2/3 difficulty/newcomer PRs. I was
+continuous active on gitter channel of coala. Then I searched for a
+[difficulty/low issue](https://github.com/coala/coala-bears/issues?q=is%3Aopen+is%3Aissue+label%3Adifficulty%2Flow).
+
+However, I chose a needs-design [issue](https://github.com/coala/landing-frontend/issues/250).
+This issue requires changes in the [coala.io/#/languages](https://coala.io/#/languages)
+page where in place of programming language's name, there should be programming
+language's logo.
+
+I have sent a [PR](https://github.com/coala/coalaCSS/pull/29) which is some
+changes in CSS.
+
+![Changes in Second PR](/images/blog/7.png)
+
+This PR still needs approval. I am working on a script to fetch the logo
+from wikidata and add that logo to the issue. [@jayvdb](https://github.com/jayvdb),
+who is one of the owners of coala, is helping me in that script. That script
+needs [pywikidata API](https://pywikidata.readthedocs.io/en/latest/chapter2.html#fetching-items).
+
+### Post KWoC
+
+- KWoC is ending now but since it’s an open source project, I could contribute to
+  it anytime. I’ve planned to fix the issues on coala issue's list.
+
+- I've planned to contribute to some other open-source, too.
+
+Finally, I would like to thanks my mentor [Yash Nisar](https://github.com/yash-nisar)
+for helping me. I hope he will be there when I need his mentorship.
+A Lot more to learn from you. Thanks again!🙂 Also, thank you
+[Kharagpur Open Source Society(KOSS)](https://kossiitkgp.in/) and the people
+at KOSS for organizing Kharagpur Winter of Code and making sure that every
+student who is new to the open source get benefited.
+
+**[Sangam Kumar](https://github.com/sangamcse)**
