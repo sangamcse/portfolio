@@ -79,8 +79,8 @@
   --color-link-hover: #7c3aed;
 
   // Background Colors
-  --color-background: #020202;
-  --color-background-a: #060607;
+  --color-background: #090907;
+  --color-background-a: #020202;
   --color-background-b: #090a0c;
   --color-background-c: #0c1011;
   --color-background-d: #0f1516;
@@ -122,7 +122,7 @@ body {
 }
 
 .header {
-  @apply relative flex justify-center p-4 h-16 bg-background-d;
+  @apply relative flex justify-center p-4 h-16 bg-background-a;
 
   &__inner {
     @apply flex items-center justify-between my-0 mx-auto w-screen text-center text-xl text-body;
@@ -135,22 +135,6 @@ body {
 
 .logo {
   @apply flex items-center no-underline font-semibold font-mono;
-
-  &__cursor {
-    display: inline-block;
-    width: 10px;
-    height: 1rem;
-    background: green;
-    margin-left: 5px;
-    border-radius: 1px;
-    animation: cursor 1.25s infinite;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .logo__cursor {
-    animation: none;
-  }
 }
 
 @keyframes cursor {

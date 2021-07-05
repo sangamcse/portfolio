@@ -42,20 +42,12 @@ export const Hero = () => {
   return (
     <section className="p-8">
       <div className="container flex items-center justify-center flex-wrap sm:flex-nowrap">
-        <img
-          width="512"
-          height="512"
-          src="https://www.gravatar.com/userimage/132789617/c7c28eea1783212454f7706ff20afca4?size=512"
-          className="rounded-full shadow-lg h-64 w-64 mb-8 sm:mr-16 sm:mb-0"
-          title="Sangam’s avatar"
-          alt="Sangam’s avatar"
-        />
-        <div className="text-right" style={{ flexBasis: '60ch' }}>
+        <div className="text-left" style={{ flexBasis: '60ch' }}>
           <p className="text-3xl mb-1 text-heading">Hi, I’m Sangam and I’m</p>
           <p className="relative text-4xl text-primary h-24 sm:h-auto">
             {transitions.map(({ item, key, props }) => (
               <animated.span
-                className="absolute right-0 text-shadow-md"
+                className="absolute text-shadow-md"
                 key={key}
                 style={props}
               >
@@ -64,6 +56,14 @@ export const Hero = () => {
             ))}
           </p>
         </div>
+        <img
+          width="512"
+          height="512"
+          src="https://avatars.githubusercontent.com/u/26381717?s=512"
+          className="rounded-full shadow-lg h-64 w-64 mb-8 sm:mr-16 sm:mb-0"
+          title="Sangam’s avatar"
+          alt="Sangam’s avatar"
+        />
       </div>
     </section>
   );

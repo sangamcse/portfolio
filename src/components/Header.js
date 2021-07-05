@@ -12,7 +12,6 @@ export const Header = () => {
           <a className="hover:text-primary-hover">
             <div className="logo">
               <span className="text-lg">sangamcse</span>
-              <span className="logo__cursor" />
             </div>
           </a>
         </Link>

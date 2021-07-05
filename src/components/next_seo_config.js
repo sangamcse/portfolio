@@ -10,8 +10,7 @@ const defaultSeo = {
     site_name: 'sangamcse',
     images: [
       {
-        url:
-          'https://www.gravatar.com/userimage/132789617/c7c28eea1783212454f7706ff20afca4?size=512',
+        url: 'https://avatars.githubusercontent.com/u/26381717?s=512',
         width: 512,
         height: 512,
         alt: 'Sangam Kumar',
@@ -19,7 +18,7 @@ const defaultSeo = {
     ],
   },
   twitter: {
-    handle: '@sangamcse',
+    handle: '@meetsangamcse',
     cardType: 'summary',
   },
 };
