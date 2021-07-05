@@ -137,20 +137,6 @@ body {
   @apply flex items-center no-underline font-semibold font-mono;
 }
 
-@keyframes cursor {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
 .menu {
   border-right: 1px solid;
   margin-right: 18px;
