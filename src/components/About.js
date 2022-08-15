@@ -6,7 +6,7 @@ export const About = () => {
           <h1>About</h1>
           <p className="text-body">
             Hi! My name is Sangam. I'm from Bihar, and I'm a Full Stack
-            Developer working as an SDE 2 at{' '}
+            Developer working as a Senior Software Engineer at{' '}
             <a href="https://www.hackerrank.com">HackerRank</a> in Bangalore,
             India. We build tools to help recruiters hire developers.
           </p>

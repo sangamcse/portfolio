@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import hydrate from 'next-mdx-remote/hydrate';
+import { MDXRemote } from 'next-mdx-remote';
 
 import { FeaturedImage } from 'components/blog/featured_image';
 import { blogComponents } from 'utils/mdx';
@@ -10,8 +10,6 @@ export const BlogPost = ({
   frontMatter: { title, snippet, tags, img },
   source,
 }) => {
-  const mdx = hydrate(source, { components: blogComponents });
-
   return (
     <div className="bg-prism">
       <main className="m-auto py-8 prose lg:prose-lg xl:prose-xl">
@@ -26,7 +24,9 @@ export const BlogPost = ({
             image={img}
             withSeo
           />
-          <section className="px-4 mb-4">{mdx}</section>
+          <section className="px-4 mb-4">
+            <MDXRemote {...source} components={blogComponents} lazy />
+          </section>
           <BelowTheFold title={title} tags={tags} />
         </article>
       </main>

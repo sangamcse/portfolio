@@ -1,4 +1,4 @@
-import renderToString from 'next-mdx-remote/render-to-string';
+import { serialize } from 'next-mdx-remote/serialize';
 import matter from 'gray-matter';
 import { glob } from 'glob';
 
@@ -33,7 +33,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
     ...data,
     publishedAt: data.publishedAt.toISOString(),
   };
-  const mdxSource = await renderToString(content, {
+  const mdxSource = await serialize(content, {
     scope: frontMatter,
     components: blogComponents,
     mdxOptions,
