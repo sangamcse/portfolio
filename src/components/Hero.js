@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { shuffle } from 'lodash';
 import { useTransition, animated } from 'react-spring';
+import Image from 'next/image';
 
 import { allRoles } from 'components/allRoles';
 
@@ -14,7 +15,7 @@ export const Hero = () => {
     const interval = setInterval(() => {
       if (!document?.hasFocus()) return;
 
-      setRoles(currentRoles =>
+      setRoles((currentRoles) =>
         currentRoles.length > 1 ? currentRoles.slice(1) : shuffle(allRoles)
       );
     }, RESELECT_INTERVAL);
@@ -43,7 +44,9 @@ export const Hero = () => {
     <section className="p-8">
       <div className="container flex items-center justify-center flex-wrap sm:flex-nowrap">
         <div className="text-left" style={{ flexBasis: '60ch' }}>
-          <p className="text-3xl mb-1 text-heading">Hi, I’m Sangam and I’m</p>
+          <p className="text-3xl mb-1 text-heading">
+            Hi, I&apos;m Sangam and I&apos;m
+          </p>
           <p className="relative text-4xl text-primary h-24 sm:h-auto">
             {transitions.map(({ item, key, props }) => (
               <animated.span
@@ -56,13 +59,13 @@ export const Hero = () => {
             ))}
           </p>
         </div>
-        <img
-          width="512"
-          height="512"
+        <Image
+          width="256"
+          height="256"
           src="https://avatars.githubusercontent.com/u/26381717?s=512"
           className="rounded-full shadow-lg h-64 w-64 mb-8 sm:mr-16 sm:mb-0"
-          title="Sangam’s avatar"
-          alt="Sangam’s avatar"
+          title="Sangam's avatar"
+          alt="Sangam's avatar"
         />
       </div>
     </section>

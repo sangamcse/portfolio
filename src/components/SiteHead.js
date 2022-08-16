@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export const MyHead = props => {
+export const MyHead = (props) => {
   const { children } = props;
 
   return (
@@ -12,13 +12,6 @@ export const MyHead = props => {
       />
       <link rel="icon" href="/favicon.ico" />
       {children}
-      <link
-        as="style"
-        rel="stylesheet preload prefetch"
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap"
-        type="text/css"
-        crossOrigin="anonymous"
-      />
     </Head>
   );
 };

@@ -11,4 +11,7 @@ module.exports = withPlugins([svgr], {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
 });

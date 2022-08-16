@@ -1,7 +1,9 @@
 module.exports = {
-  extends: 'stylelint-config-standard',
+  extends: ['stylelint-config-standard-scss'],
+  customSyntax: require('postcss-scss'),
+  plugins: ['stylelint-scss'],
   rules: {
-    'at-rule-no-unknown': [
+    'scss/at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: ['extends', 'tailwind'],

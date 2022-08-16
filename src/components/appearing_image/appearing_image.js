@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
 import Image from 'next/image';
