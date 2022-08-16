@@ -11,9 +11,8 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
-            rel="stylesheet preload prefetch"
             href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap"
-            as="style"
+            rel="stylesheet"
           />
         </Head>
         <body>
