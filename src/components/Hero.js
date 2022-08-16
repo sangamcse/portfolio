@@ -66,6 +66,7 @@ export const Hero = () => {
           className="rounded-full shadow-lg h-64 w-64 mb-8 sm:mr-16 sm:mb-0"
           title="Sangam's avatar"
           alt="Sangam's avatar"
+          priority
         />
       </div>
     </section>
