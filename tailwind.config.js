@@ -2,7 +2,7 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 const typography = require('@tailwindcss/typography');
 
 module.exports = {
-  purge: ['./src/**/*.js', './src/styles/*.scss'],
+  content: ['./src/**/*.js', './src/styles/*.scss'],
   theme: {
     fontFamily: {
       mono: ['DM Mono', fontFamily.mono],
@@ -43,7 +43,7 @@ module.exports = {
       width: {
         'max-content': 'max-content',
       },
-      typography: theme => ({
+      typography: (theme) => ({
         DEFAULT: {
           css: {
             h1: {
@@ -145,14 +145,6 @@ module.exports = {
     minWidth: {
       '1/3': '33%',
     },
-  },
-  variants: {
-    textColor: ['responsive', 'hover', 'focus', 'visited', 'group-hover'],
-    textDecoration: ['hover', 'focus', 'group-hover'],
-    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
-    borderWidth: ['responsive', 'hover', 'focus'],
-    borderStyle: ['responsive', 'focus'],
-    backgroundColor: ['even', 'hover'],
   },
   plugins: [
     typography({
