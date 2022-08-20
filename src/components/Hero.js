@@ -60,8 +60,8 @@ export const Hero = () => {
           </p>
         </div>
         <Image
-          width="256"
-          height="256"
+          width={256}
+          height={256}
           src="https://avatars.githubusercontent.com/u/26381717?s=512"
           className="rounded-full shadow-lg h-64 w-64 mb-8 sm:mr-16 sm:mb-0"
           title="Sangam's avatar"

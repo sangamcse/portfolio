@@ -16,7 +16,7 @@ export const AppearingImage = ({ offset, onLoad, ...props }) => {
 
   return (
     <animated.div style={animatedStyle}>
-      <Image {...props} onLoad={handleOnLoad} />
+      <Image {...props} onLoad={handleOnLoad} loading="lazy" />
     </animated.div>
   );
 };

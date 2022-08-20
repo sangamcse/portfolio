@@ -43,8 +43,7 @@ export const FeaturedImage = ({
           src={imageSrc}
           width={2048}
           height={1152}
-          offset="3rem"
-          className="sm:rounded shadow-lg"
+          className="sm:rounded shadow-lg object-contain"
           alt={`hero of "${title}"`}
         />
       </div>
