@@ -1,7 +1,7 @@
 import { rootUrl } from 'utils/constants';
 
 const defaultSeo = {
-  title: 'Home | sangamcse',
+  title: 'Sangam Kumar | sangamcse',
   description: 'Senior Software Engineer',
   openGraph: {
     type: 'website',

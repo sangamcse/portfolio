@@ -14,7 +14,7 @@ export const getTwitterHref = ({ url, title, tags }) => {
   const shareUrl = new URL(TWITTER_INTENT_URL);
   const search = new URLSearchParams({
     url,
-    text: `${title} ⚛️`,
+    text: title,
     hashtags: tags.join(','),
     via: TWITTER_HANDLE,
   }).toString();
@@ -31,7 +31,7 @@ export const getTwitterHref = ({ url, title, tags }) => {
   return shareUrl.href;
 };
 
-export const TweetButton = props => (
+export const TweetButton = (props) => (
   <a
     href={getTwitterHref(props)}
     className={cn(

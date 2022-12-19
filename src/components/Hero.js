@@ -64,8 +64,8 @@ export const Hero = () => {
           height={256}
           src="https://avatars.githubusercontent.com/u/26381717?s=512"
           className="rounded-full shadow-lg h-64 w-64 mb-8 sm:mr-16 sm:mb-0"
-          title="Sangam's avatar"
-          alt="Sangam's avatar"
+          title="Sangam Kumar"
+          alt="Sangam Kumar"
           priority
         />
       </div>
