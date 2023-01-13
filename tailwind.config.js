@@ -97,6 +97,9 @@ module.exports = {
             ul: {
               color: 'var(--color-secondary)',
             },
+            ol: {
+              color: 'var(--color-secondary)',
+            },
             strong: {
               color: 'var(--color-heading)',
             },
