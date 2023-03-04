@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Blog posts | RSS Feed</title>
+        <link>http://localhost:3500</link>
+        <description>Welcome to my blog posts!</description>
+        <lastBuildDate>Sat, 04 Mar 2023 17:30:57 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Sangam's posts</generator>
+        <image>
+            <title>Blog posts | RSS Feed</title>
+            <url>https://avatars.githubusercontent.com/u/26381717</url>
+            <link>http://localhost:3500</link>
+        </image>
+        <copyright>All rights reserved 2023, Sangam</copyright>
+        <item>
+            <title><![CDATA[Overcoming Toxic Productivity: The Importance of Self-Care and Work-Life Balance]]></title>
+            <link>http://localhost:3500/blog/2023/overcoming-toxic-productivity</link>
+            <guid>http://localhost:3500/blog/2023/overcoming-toxic-productivity</guid>
+            <pubDate>Mon, 09 Jan 2023 19:11:44 GMT</pubDate>
+            <description><![CDATA[Toxic productivity is a dangerous state of being that can have severe consequences for individuals and their loved ones.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Distributed Systems: Key Concepts and Challenges]]></title>
+            <link>http://localhost:3500/blog/2022/distributed-systems-key-concepts-and-challenges</link>
+            <guid>http://localhost:3500/blog/2022/distributed-systems-key-concepts-and-challenges</guid>
+            <pubDate>Mon, 19 Dec 2022 10:12:30 GMT</pubDate>
+            <description><![CDATA[Distributed systems are computer systems that allow multiple computers to work together as a single entity.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Write it down]]></title>
+            <link>http://localhost:3500/blog/2022/write-it-down</link>
+            <guid>http://localhost:3500/blog/2022/write-it-down</guid>
+            <pubDate>Wed, 16 Feb 2022 17:55:50 GMT</pubDate>
+            <description><![CDATA[My crappy superpower is solving difficult problems as I'm falling asleep.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Good Writers]]></title>
+            <link>http://localhost:3500/blog/2022/good-writers</link>
+            <guid>http://localhost:3500/blog/2022/good-writers</guid>
+            <pubDate>Tue, 15 Feb 2022 20:32:11 GMT</pubDate>
+            <description><![CDATA[Did you notice that some people write extremely well?]]></description>
+        </item>
+        <item>
+            <title><![CDATA[GSoC'18 Post#2: `pytest` over `unittest`]]></title>
+            <link>http://localhost:3500/blog/2018/coding-phase-begins</link>
+            <guid>http://localhost:3500/blog/2018/coding-phase-begins</guid>
+            <pubDate>Wed, 13 Jun 2018 20:27:20 GMT</pubDate>
+            <description><![CDATA[Coding phase of Google Summer of Code 2018 begins.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[GSoC'18 Post#1: Community bonding ends]]></title>
+            <link>http://localhost:3500/blog/2018/community-bonding</link>
+            <guid>http://localhost:3500/blog/2018/community-bonding</guid>
+            <pubDate>Wed, 06 Jun 2018 19:27:20 GMT</pubDate>
+            <description><![CDATA[Community bonding of Google Summer of Code 2018.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[GSoC 2018 with coala]]></title>
+            <link>http://localhost:3500/blog/2018/gsoc-with-coala</link>
+            <guid>http://localhost:3500/blog/2018/gsoc-with-coala</guid>
+            <pubDate>Mon, 30 Apr 2018 19:27:20 GMT</pubDate>
+            <description><![CDATA[Introduction of Google Summer of Code.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[KWoC-Kharagpur Winter of Code]]></title>
+            <link>http://localhost:3500/blog/2018/postkwoc</link>
+            <guid>http://localhost:3500/blog/2018/postkwoc</guid>
+            <pubDate>Thu, 04 Jan 2018 12:34:20 GMT</pubDate>
+            <description><![CDATA[End-term report of KWoC 2017.]]></description>
+        </item>
+    </channel>
+</rss>

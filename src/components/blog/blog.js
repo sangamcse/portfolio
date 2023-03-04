@@ -5,7 +5,7 @@ export const Blog = ({ pages }) => (
     <main className="text-lg max-w-readability-lg py-4">
       <h1 className="text-4xl text-heading p-4">Blog</h1>
       <ul className="mb-8 bg-background-b rounded shadow max-w-full flex flex-col">
-        {pages.map(page => (
+        {pages.map((page) => (
           <PostSnippet key={page.__resourcePath} {...page} />
         ))}
       </ul>

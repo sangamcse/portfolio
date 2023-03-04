@@ -27,6 +27,7 @@
     "@vercel/node": "2.5.8",
     "autoprefixer": "10.4.8",
     "classnames": "2.3.1",
+    "feed": "4.2.2",
     "glob": "7.2.3",
     "gray-matter": "4.0.3",
     "lodash": "4.17.21",

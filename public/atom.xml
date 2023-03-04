@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:3500</id>
+    <title>Blog posts | RSS Feed</title>
+    <updated>2023-03-04T17:30:57.283Z</updated>
+    <generator>Feed for Sangam's posts</generator>
+    <link rel="alternate" href="http://localhost:3500"/>
+    <link rel="self" href="http://localhost:3500/atom.xml"/>
+    <subtitle>Welcome to my blog posts!</subtitle>
+    <logo>https://avatars.githubusercontent.com/u/26381717</logo>
+    <icon>http://localhost:3500/favicon.ico</icon>
+    <rights>All rights reserved 2023, Sangam</rights>
+    <entry>
+        <title type="html"><![CDATA[Overcoming Toxic Productivity: The Importance of Self-Care and Work-Life Balance]]></title>
+        <id>http://localhost:3500/blog/2023/overcoming-toxic-productivity</id>
+        <link href="http://localhost:3500/blog/2023/overcoming-toxic-productivity"/>
+        <updated>2023-01-09T19:11:44.000Z</updated>
+        <summary type="html"><![CDATA[Toxic productivity is a dangerous state of being that can have severe consequences for individuals and their loved ones.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Distributed Systems: Key Concepts and Challenges]]></title>
+        <id>http://localhost:3500/blog/2022/distributed-systems-key-concepts-and-challenges</id>
+        <link href="http://localhost:3500/blog/2022/distributed-systems-key-concepts-and-challenges"/>
+        <updated>2022-12-19T10:12:30.000Z</updated>
+        <summary type="html"><![CDATA[Distributed systems are computer systems that allow multiple computers to work together as a single entity.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Write it down]]></title>
+        <id>http://localhost:3500/blog/2022/write-it-down</id>
+        <link href="http://localhost:3500/blog/2022/write-it-down"/>
+        <updated>2022-02-16T17:55:50.000Z</updated>
+        <summary type="html"><![CDATA[My crappy superpower is solving difficult problems as I'm falling asleep.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Good Writers]]></title>
+        <id>http://localhost:3500/blog/2022/good-writers</id>
+        <link href="http://localhost:3500/blog/2022/good-writers"/>
+        <updated>2022-02-15T20:32:11.131Z</updated>
+        <summary type="html"><![CDATA[Did you notice that some people write extremely well?]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GSoC'18 Post#2: `pytest` over `unittest`]]></title>
+        <id>http://localhost:3500/blog/2018/coding-phase-begins</id>
+        <link href="http://localhost:3500/blog/2018/coding-phase-begins"/>
+        <updated>2018-06-13T20:27:20.000Z</updated>
+        <summary type="html"><![CDATA[Coding phase of Google Summer of Code 2018 begins.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GSoC'18 Post#1: Community bonding ends]]></title>
+        <id>http://localhost:3500/blog/2018/community-bonding</id>
+        <link href="http://localhost:3500/blog/2018/community-bonding"/>
+        <updated>2018-06-06T19:27:20.000Z</updated>
+        <summary type="html"><![CDATA[Community bonding of Google Summer of Code 2018.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GSoC 2018 with coala]]></title>
+        <id>http://localhost:3500/blog/2018/gsoc-with-coala</id>
+        <link href="http://localhost:3500/blog/2018/gsoc-with-coala"/>
+        <updated>2018-04-30T19:27:20.000Z</updated>
+        <summary type="html"><![CDATA[Introduction of Google Summer of Code.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[KWoC-Kharagpur Winter of Code]]></title>
+        <id>http://localhost:3500/blog/2018/postkwoc</id>
+        <link href="http://localhost:3500/blog/2018/postkwoc"/>
+        <updated>2018-01-04T12:34:20.000Z</updated>
+        <summary type="html"><![CDATA[End-term report of KWoC 2017.]]></summary>
+    </entry>
+</feed>
