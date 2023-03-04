@@ -13,10 +13,8 @@ export async function getStaticPaths() {
   const paths = glob.sync(`${BLOG_PATH_PREFIX}**/*.mdx`);
 
   return {
-    paths: paths.map(path => {
-      const slug = formatMdxPath(path)
-        .replace('blog/', '')
-        .split('/');
+    paths: paths.map((path) => {
+      const slug = formatMdxPath(path).replace('blog/', '').split('/');
       return {
         params: { slug },
       };

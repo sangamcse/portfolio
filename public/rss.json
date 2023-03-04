@@ -1,0 +1,66 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Blog posts | RSS Feed",
+  "home_page_url": "http://localhost:3500",
+  "feed_url": "http://localhost:3500/rss.json",
+  "description": "Welcome to my blog posts!",
+  "icon": "https://avatars.githubusercontent.com/u/26381717",
+  "items": [
+    {
+      "id": "http://localhost:3500/blog/2023/overcoming-toxic-productivity",
+      "url": "http://localhost:3500/blog/2023/overcoming-toxic-productivity",
+      "title": "Overcoming Toxic Productivity: The Importance of Self-Care and Work-Life Balance",
+      "summary": "Toxic productivity is a dangerous state of being that can have severe consequences for individuals and their loved ones.",
+      "date_modified": "2023-01-09T19:11:44.000Z"
+    },
+    {
+      "id": "http://localhost:3500/blog/2022/distributed-systems-key-concepts-and-challenges",
+      "url": "http://localhost:3500/blog/2022/distributed-systems-key-concepts-and-challenges",
+      "title": "Distributed Systems: Key Concepts and Challenges",
+      "summary": "Distributed systems are computer systems that allow multiple computers to work together as a single entity.",
+      "date_modified": "2022-12-19T10:12:30.000Z"
+    },
+    {
+      "id": "http://localhost:3500/blog/2022/write-it-down",
+      "url": "http://localhost:3500/blog/2022/write-it-down",
+      "title": "Write it down",
+      "summary": "My crappy superpower is solving difficult problems as I'm falling asleep.",
+      "date_modified": "2022-02-16T17:55:50.000Z"
+    },
+    {
+      "id": "http://localhost:3500/blog/2022/good-writers",
+      "url": "http://localhost:3500/blog/2022/good-writers",
+      "title": "Good Writers",
+      "summary": "Did you notice that some people write extremely well?",
+      "date_modified": "2022-02-15T20:32:11.131Z"
+    },
+    {
+      "id": "http://localhost:3500/blog/2018/coding-phase-begins",
+      "url": "http://localhost:3500/blog/2018/coding-phase-begins",
+      "title": "GSoC'18 Post#2: `pytest` over `unittest`",
+      "summary": "Coding phase of Google Summer of Code 2018 begins.",
+      "date_modified": "2018-06-13T20:27:20.000Z"
+    },
+    {
+      "id": "http://localhost:3500/blog/2018/community-bonding",
+      "url": "http://localhost:3500/blog/2018/community-bonding",
+      "title": "GSoC'18 Post#1: Community bonding ends",
+      "summary": "Community bonding of Google Summer of Code 2018.",
+      "date_modified": "2018-06-06T19:27:20.000Z"
+    },
+    {
+      "id": "http://localhost:3500/blog/2018/gsoc-with-coala",
+      "url": "http://localhost:3500/blog/2018/gsoc-with-coala",
+      "title": "GSoC 2018 with coala",
+      "summary": "Introduction of Google Summer of Code.",
+      "date_modified": "2018-04-30T19:27:20.000Z"
+    },
+    {
+      "id": "http://localhost:3500/blog/2018/postkwoc",
+      "url": "http://localhost:3500/blog/2018/postkwoc",
+      "title": "KWoC-Kharagpur Winter of Code",
+      "summary": "End-term report of KWoC 2017.",
+      "date_modified": "2018-01-04T12:34:20.000Z"
+    }
+  ]
+}
