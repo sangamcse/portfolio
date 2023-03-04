@@ -9,13 +9,14 @@ export const getFrontMatters = async (globPattern) => {
 
   return orderBy(
     paths.map((path) => {
-      const { data } = matter.read(path);
+      const { content, data } = matter.read(path);
 
       return {
         ...data,
         publishedAt: data.publishedAt.toISOString(),
         __resourcePath: path,
         slug: formatMdxPath(path),
+        content: content,
       };
     }),
     ['publishedAt'],
