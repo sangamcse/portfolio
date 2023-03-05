@@ -15,7 +15,7 @@
   "homepage": "https://www.sangam.dev",
   "scripts": {
     "dev": "next dev -p 3535",
-    "build": "next build",
+    "build": "next build && node ./.next/server/scripts/generate-rss.js",
     "start": "next start",
     "lint": "next lint && stylelint --fix --config stylelint.config.js src/styles/*.scss",
     "lint:quick": "yarn lint && pretty-quick --staged",
@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@mapbox/rehype-prism": "0.8.0",
+    "@mdx-js/loader": "2.3.0",
+    "@next/mdx": "13.2.3",
     "@tailwindcss/typography": "0.5.4",
     "@vercel/node": "2.5.8",
     "autoprefixer": "10.4.8",

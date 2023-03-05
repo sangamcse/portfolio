@@ -4,7 +4,7 @@ import { orderBy } from 'lodash';
 
 import { formatMdxPath } from 'utils/format_mdx_path';
 
-export const getFrontMatters = async (globPattern) => {
+export const getFrontMatters = (globPattern) => {
   const paths = glob.sync(globPattern);
 
   return orderBy(

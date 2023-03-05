@@ -16,7 +16,7 @@ export default async function generateRssFeed() {
     image: 'https://avatars.githubusercontent.com/u/26381717',
     favicon: `${rootUrl}/favicon.ico`,
     copyright: `All rights reserved ${new Date().getFullYear()}, Sangam`,
-    generator: `Feed for Sangam's posts`,
+    generator: `Feed for Node.js`,
     feedLinks: {
       rss2: `${rootUrl}/rss.xml`,
       json: `${rootUrl}/rss.json`,
@@ -33,8 +33,10 @@ export default async function generateRssFeed() {
       link: `${rootUrl}/${post.slug}`,
       description: post.snippet,
       date: new Date(post.publishedAt),
+      published: new Date(post.publishedAt),
       image: `${rootUrl}/${post.img}`,
       content: post.content,
+      category: post.tags.map((tag) => ({ name: tag })),
     });
   });
 
