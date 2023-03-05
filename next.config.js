@@ -1,4 +1,8 @@
 module.exports = {
+  experimental: {
+    esmExternals: true,
+  },
+  // webpack5: true,
   pageExtensions: ['js', 'jsx'],
   i18n: {
     locales: ['en'],
@@ -18,7 +22,7 @@ module.exports = {
         const entries = { ...(await originalEntry()) };
 
         // These scripts can import components from the app and use ES modules
-        entries['scripts/generate-rss.js'] = './scripts/generate-rss.js';
+        entries['scripts/generate-rss.js'] = './src/scripts/generate-rss.js';
 
         return entries;
       };
