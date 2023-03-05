@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3500</id>
     <title>Blog posts | RSS Feed</title>
-    <updated>2023-03-04T18:24:10.075Z</updated>
-    <generator>Feed for Sangam's posts</generator>
+    <updated>2023-03-04T18:58:52.441Z</updated>
+    <generator>Feed for Node.js</generator>
     <link rel="alternate" href="http://localhost:3500"/>
     <link rel="self" href="http://localhost:3500/atom.xml"/>
     <subtitle>Welcome to my blog posts!</subtitle>
@@ -33,6 +33,9 @@ There are several signs that you may be experiencing toxic productivity. These i
 
 Remember, productivity is important, but it's not worth sacrificing your own health and happiness. Take the time to care for yourself and those around you, and you'll be on your way to a healthier, more balanced life.
 ]]></content>
+        <category label="non-tech"/>
+        <category label="selfcare"/>
+        <category label="productivity"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Distributed Systems: Key Concepts and Challenges]]></title>
@@ -88,6 +91,9 @@ Testing and debugging distributed systems can be a complex and time-consuming pr
 
 Distributed systems require ongoing maintenance to ensure that they continue to operate effectively and efficiently. This may involve monitoring the system to identify and fix any issues, updating the design to incorporate new features or address security vulnerabilities, and performing regular backups to protect against data loss. It is essential to have a well-defined maintenance plan in place to ensure that the system remains reliable and performs at its best.
 ]]></content>
+        <category label="tech"/>
+        <category label="distributedsystems"/>
+        <category label="systemdesign"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Write it down]]></title>
@@ -108,6 +114,7 @@ I have a new policy: **write it down.** Every single time. No matter if the idea
 
 Most of my ideas are bad. But this way I'll never miss an opportunity.
 ]]></content>
+        <category label="non-tech"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Good Writers]]></title>
@@ -130,6 +137,7 @@ Because I have a lot of practice writing in this dull manner that meets school r
 
 I'm learning to recognize good writing, and I'm fascinated. We all use the same set of words, but some writers are so much better at using them.
 ]]></content>
+        <category label="non-tech"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[GSoC'18 Post#2: `pytest` over `unittest`]]></title>
@@ -236,6 +244,9 @@ it by this week.
 
 Thanks for stopping by ! Happy coding ! :blush:
 ]]></content>
+        <category label="GSoC"/>
+        <category label="coala"/>
+        <category label="coding-phase"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[GSoC'18 Post#1: Community bonding ends]]></title>
@@ -301,6 +312,9 @@ of coala. It has been a wonderful time so far. I've managed to get
 Thats all for community bonding !
 Stay tuned ! Till then, Happy Coding !
 ]]></content>
+        <category label="GSoC"/>
+        <category label="coala"/>
+        <category label="community-bonding"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[GSoC 2018 with coala]]></title>
@@ -385,6 +399,8 @@ them.
 
 Thats all folks ! Stay tuned.
 ]]></content>
+        <category label="GSoC"/>
+        <category label="coala"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[KWoC-Kharagpur Winter of Code]]></title>
@@ -501,5 +517,7 @@ student who is new to the open source get benefited.
 
 **[Sangam Kumar](https://github.com/sangamcse)**
 ]]></content>
+        <category label="kwoc"/>
+        <category label="end-term"/>
     </entry>
 </feed>

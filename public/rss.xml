@@ -4,9 +4,9 @@
         <title>Blog posts | RSS Feed</title>
         <link>http://localhost:3500</link>
         <description>Welcome to my blog posts!</description>
-        <lastBuildDate>Sat, 04 Mar 2023 18:24:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Mar 2023 18:58:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-        <generator>Feed for Sangam's posts</generator>
+        <generator>Feed for Node.js</generator>
         <image>
             <title>Blog posts | RSS Feed</title>
             <url>https://avatars.githubusercontent.com/u/26381717</url>
@@ -36,6 +36,9 @@ There are several signs that you may be experiencing toxic productivity. These i
 
 Remember, productivity is important, but it's not worth sacrificing your own health and happiness. Take the time to care for yourself and those around you, and you'll be on your way to a healthier, more balanced life.
 ]]></content:encoded>
+            <category>non-tech</category>
+            <category>selfcare</category>
+            <category>productivity</category>
             <enclosure url="http://localhost:3500/2023/productivity.png" length="0" type="image/png"/>
         </item>
         <item>
@@ -92,6 +95,9 @@ Testing and debugging distributed systems can be a complex and time-consuming pr
 
 Distributed systems require ongoing maintenance to ensure that they continue to operate effectively and efficiently. This may involve monitoring the system to identify and fix any issues, updating the design to incorporate new features or address security vulnerabilities, and performing regular backups to protect against data loss. It is essential to have a well-defined maintenance plan in place to ensure that the system remains reliable and performs at its best.
 ]]></content:encoded>
+            <category>tech</category>
+            <category>distributedsystems</category>
+            <category>systemdesign</category>
             <enclosure url="http://localhost:3500/2022/distributed-systems.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
@@ -113,6 +119,7 @@ I have a new policy: **write it down.** Every single time. No matter if the idea
 
 Most of my ideas are bad. But this way I'll never miss an opportunity.
 ]]></content:encoded>
+            <category>non-tech</category>
             <enclosure url="http://localhost:3500/2022/write-down.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
@@ -136,6 +143,7 @@ Because I have a lot of practice writing in this dull manner that meets school r
 
 I'm learning to recognize good writing, and I'm fascinated. We all use the same set of words, but some writers are so much better at using them.
 ]]></content:encoded>
+            <category>non-tech</category>
             <enclosure url="http://localhost:3500/2022/aaron-swartz.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
@@ -243,6 +251,9 @@ it by this week.
 
 Thanks for stopping by ! Happy coding ! :blush:
 ]]></content:encoded>
+            <category>GSoC</category>
+            <category>coala</category>
+            <category>coding-phase</category>
             <enclosure url="http://localhost:3500/coala.png" length="0" type="image/png"/>
         </item>
         <item>
@@ -309,6 +320,9 @@ of coala. It has been a wonderful time so far. I've managed to get
 Thats all for community bonding !
 Stay tuned ! Till then, Happy Coding !
 ]]></content:encoded>
+            <category>GSoC</category>
+            <category>coala</category>
+            <category>community-bonding</category>
             <enclosure url="http://localhost:3500/coala.png" length="0" type="image/png"/>
         </item>
         <item>
@@ -394,6 +408,8 @@ them.
 
 Thats all folks ! Stay tuned.
 ]]></content:encoded>
+            <category>GSoC</category>
+            <category>coala</category>
             <enclosure url="http://localhost:3500/gsoc-logo.png" length="0" type="image/png"/>
         </item>
         <item>
@@ -511,6 +527,8 @@ student who is new to the open source get benefited.
 
 **[Sangam Kumar](https://github.com/sangamcse)**
 ]]></content:encoded>
+            <category>kwoc</category>
+            <category>end-term</category>
             <enclosure url="http://localhost:3500/kwoc_logo.png" length="0" type="image/png"/>
         </item>
     </channel>
