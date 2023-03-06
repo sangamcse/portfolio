@@ -5,6 +5,8 @@ import { Feed } from 'feed';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 
+import { getImageSrc } from 'components/blog/get_image_src';
+
 import { getFrontMatters } from 'utils/get_front_matters';
 import { BLOG_PATH_PREFIX, blogComponents, mdxOptions } from 'utils/mdx';
 import { rootUrl } from 'utils/constants';
@@ -53,13 +55,15 @@ export async function generateRssFeed() {
 
   entries.forEach(
     ({ title, slug, img, publishedAt, tags, snippet, content }) => {
+      const imageSrc = getImageSrc(img);
+
       feed.addItem({
         title,
         id: `${rootUrl}/${slug}`,
         link: `${rootUrl}/${slug}`,
         date: new Date(publishedAt),
         published: new Date(publishedAt),
-        image: `${rootUrl}/${img}`,
+        image: `${rootUrl}${imageSrc}`,
         description: snippet,
         category: tags.map((tag) => ({ name: tag })),
         content: ReactDOMServer.renderToStaticMarkup(
