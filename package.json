@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@mapbox/rehype-prism": "0.8.0",
+    "@pondorasti/remark-img-links": "1.0.8",
     "@tailwindcss/typography": "0.5.4",
     "@vercel/node": "2.5.8",
     "autoprefixer": "10.4.8",
