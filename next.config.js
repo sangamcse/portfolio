@@ -1,8 +1,9 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+
+const nextConfig = {
   experimental: {
     esmExternals: true,
   },
-  // webpack5: true,
   pageExtensions: ['js', 'jsx'],
   i18n: {
     locales: ['en'],
@@ -14,20 +15,20 @@ module.exports = {
   images: {
     domains: ['avatars.githubusercontent.com'],
   },
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && isServer) {
-      const originalEntry = config.entry;
-
-      config.entry = async () => {
-        const entries = { ...(await originalEntry()) };
-
-        // These scripts can import components from the app and use ES modules
-        entries['scripts/generate-rss.js'] = './src/scripts/generate-rss.js';
-
-        return entries;
-      };
-    }
-
-    return config;
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/json',
+          destination: '/feed.json',
+        },
+        {
+          source: '/rss',
+          destination: '/feed.xml',
+        },
+      ],
+    };
   },
 };
+
+module.exports = nextConfig;
