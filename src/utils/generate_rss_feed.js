@@ -64,6 +64,7 @@ export async function generateRssFeed() {
         date: new Date(publishedAt),
         published: new Date(publishedAt),
         image: `${rootUrl}${imageSrc}`,
+        cover_image: `${rootUrl}${imageSrc}`,
         description: snippet,
         category: tags.map((tag) => ({ name: tag })),
         content: ReactDOMServer.renderToStaticMarkup(
