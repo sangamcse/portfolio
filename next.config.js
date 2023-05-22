@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: 'export',
+  basePath: '/gh-pages',
   experimental: {
     esmExternals: true,
+    appDir: true,
   },
   pageExtensions: ['js', 'jsx'],
   i18n: {
